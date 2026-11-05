@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Rabboni Security</title>
+<link rel="icon" type="image/png" href="image/Rabboni Security Crest Logo.png" />
+<link rel="apple-touch-icon" href="image/Rabboni Security Crest Logo.png" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__logo">
+      <img src="image/Rabboni Security Crest Logo.png" alt="Rabboni Security Logo" />
+      <span class="nav__logo-text">Rabboni<em>Security Limited</em></span>
+    </a>
+    <nav class="nav__menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn--primary nav__cta">Get Protected</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">CONTACT RABBONI SECURITY</span>
+    <h1>Let's talk about your safety.</h1>
+    <p>Reach out today. A Rabboni Security specialist will respond within 24 hours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2 contact-grid">
+    <div class="reveal">
+      <h2>Get in touch with Rabboni Security</h2>
+      <p>Whether you need a single guard or a full enterprise security program, Rabboni Security is ready to help.</p>
+
+      <div class="contact-info">
+        <div><strong>Email</strong><p>hello@rabbonisecurity.com</p></div>
+        <div><strong>Phone</strong><p>+234 (0) 8037055087</p></div>
+        <div><strong>Head Office</strong><p>Ikeja, Lagos, Nigeria</p></div>
+        <div><strong>Branches</strong><p>Abuja • Port Harcourt • Kano • Ondo •Edo</p></div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); this.reset(); alert('Thank you! A Rabboni Security specialist will contact you shortly.');">
+      <div class="form-row">
+        <label>Full Name<input type="text" required placeholder="Your name" /></label>
+      </div>
+      <div class="form-row">
+        <label>Email<input type="email" required placeholder="you@company.com" /></label>
+      </div>
+      <div class="form-row">
+        <label>Phone<input type="tel" placeholder="+234..." /></label>
+      </div>
+      <div class="form-row">
+        <label>Service Needed
+          <select required>
+            <option value="">Select a service</option>
+            <option>Physical Security</option>
+            <option>Secured Mobility</option>
+            <option>Cyber & Digital Security</option>
+            <option>Security Devices & Technology</option>
+            <option>Outsourcing & Talent</option>
+            <option>Advisory & Consulting</option>
+            <option>Event Security</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Message<textarea rows="5" required placeholder="Tell Rabboni Security about your needs..."></textarea></label>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <img src="image/Rabboni Security Crest Logo.png" alt="Rabboni Security" class="footer__logo" />
+      <h3 class="footer__brand">Rabboni <span>Security Limited</span></h3>
+      <p>Protection that never looks away.</p>
+    </div>
+    <div><h4>Company</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+    <div><h4>Services</h4><a href="services.html">Physical Security</a><a href="services.html">Secured Mobility</a><a href="services.html">Cyber Security</a><a href="services.html">Advisory</a></div>
+    <div><h4>Contact</h4><p>hello@rabbonisecurity.com</p><p>+234 (0) 8037055087</p></div>
+  </div>
+  <div class="container footer__bottom"><p>© <span id="year"></span> Rabboni Security.</p><p>Your Safety, Always.</p></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
